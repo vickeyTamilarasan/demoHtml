@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            /* div{
+                display: inline;
+                border: 5px solid crimson;
+            } */
+
+            /* h1{
+                border: 5px solid crimson;
+            }
+            div{
+                display: inline-block;
+                border: 2px double darkblue;
+            } */
+
+            /* div{
+                display: block;
+                border: 5px solid crimson;
+            } */
+
+            .gridcontainer{
+                display: grid;
+                grid-row-gap: 20px;
+                grid-column-gap: 20px;
+                grid-template-columns:auto auto auto auto auto;
+                border: 5px solid crimson;
+            }
+            .griditems{
+                color: beige;
+                text-align: center;
+                padding: 10px;
+                border: 2px solid crimson;
+                background-color: lightcoral;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <div>aaaa</div>
+            <div>bbbb</div>
+            <div>cccc</div>
+        </h1>
+        
+        <div class="gridcontainer">
+            <div class="griditems">1</div>
+            <div class="griditems">2</div>
+            <div class="griditems">3</div>
+            <div class="griditems">4</div>
+            <div class="griditems">5</div>
+            <div class="griditems">6</div>
+            <div class="griditems">7</div>
+            <div class="griditems">8</div>
+            <div class="griditems">9</div>
+            <div class="griditems">10</div>
+        </div>
+    </body>
+</html>

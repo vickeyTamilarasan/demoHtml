@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playkids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .login{
+            border: 1px solid  gray;
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: #ffffff;
+            margin-left: 690px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .enjoynow{
+            height: 40px;
+            width: 150px;
+            float: right;
+            color: white;
+            margin-right: 130px;
+            border-radius: 20px;
+            background-color: #ff3676;
+            border: 1px solid  #ff3676;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .firstbanner{
+            background-color: #5ec2eb;
+            position: relative;
+             left: 0;
+             right: 0;
+             height: 450px;
+        }
+        #firstbannertext{
+            position: relative;
+            color: white;
+            font-size: 30px;
+            font-family: cursive;
+            top: -320px;
+            margin-left: 100px;
+        }
+        .secondbanner{
+            position: relative;
+            height: 500px;
+            background-image: url(images/playkidsbackgound.avif);
+        }
+        .secondApptext{
+            position: relative;
+            color: #6e00e9;
+            top: -520px;
+            margin-left: 100px;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #secondtext{
+            position: relative;
+            color: #1caafa;
+            top: -550px;
+            margin-left: 100px;
+            font-size: 41px;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+        #thirdtext{
+            position: relative;
+            color: #6e00e9;
+            top: -590px;
+            margin-left: 120px;
+            font-size: 41px;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+        .desc{
+            position: relative;
+            color: black;
+            top: -600px;
+            margin-left: 100px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        .btnenjoynow{
+            height: 60px;
+            width: 280px;
+            position: relative;
+            top: -620px;
+            margin-left: 100px;
+            color: white;
+            letter-spacing: 2px;
+            border-radius: 50px;
+            background:linear-gradient(rgb(33,50,222),rgb(253,2,219)) ;
+            border: 0px solid ;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .thirdbanner{
+            position: relative;
+            background-color: #5ec2eb;
+            height: 500px;
+            margin-top: 100px;
+        }
+        #thirdsecondtext{
+            position: relative;
+            color: white;
+            top: -400px;
+            margin-left: 700px;
+            font-size: 25px;
+            letter-spacing: 15px;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+        #thirdbannertext{
+            position: relative;
+            color: white;
+            top: -425px;
+            margin-left: 700px;
+            font-size: 41px;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+        .thirddesc{
+            position: relative;
+            color: white;
+            top: -450px;
+            margin-left: 700px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        .btnthirdenjoynow{
+            height: 60px;
+            width: 280px;
+            position: relative;
+            top: -420px;
+            margin-left: 700px;
+            color: white;
+            letter-spacing: 2px;
+            border-radius: 50px;
+            background:linear-gradient(rgb(255,61,114),rgb(255,138,74)) ;
+            border: 0px solid ;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .fourthbanner{
+            position: relative;
+            height: 500px;
+            background-image: url(images/playkidsbackgound.avif);
+        }
+        #fourthsecondtext{
+            position: relative;
+            color: #ffd642;
+            top: -380px;
+            margin-left: 100px;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+        #fourththirdtext{
+            position: relative;
+            color: #6e00e9;
+            top: -400px;
+            margin-left: 100px;
+            letter-spacing: 5px;
+            font-size: 41px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fourthdesc{
+            position: relative;
+            color: black;
+            top: -420px;
+            margin-left: 100px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        .btnfourthenjoynow{
+            height: 60px;
+            width: 280px;
+            position: relative;
+            top: -400px;
+            margin-left: 100px;
+            color: white;
+            letter-spacing: 2px;
+            border-radius: 50px;
+            background:linear-gradient(rgb(255,61,114),rgb(255,138,74)) ;
+            border: 0px solid ;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .emailcontainer{
+            height: 120px;
+            position: relative;
+            background-color: #ffd642;
+        }
+        input[type=email] {
+            width: 400px;
+            padding: 12px 20px;
+            position: relative;
+            margin-left: 800px;
+            top: -60px;
+            color: black;
+            border: 1px solid white;
+            background-color: white;
+            border-radius: 50px;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footercontainer{
+    padding: 30px;
+    display: flex;
+    position: relative;
+}
+.playlogocertified{
+    position: relative;
+    list-style-type: none;
+    text-align: start ;
+}
+.playlogocertified li{
+    padding: 10px;
+}
+.secondlist{
+    position: relative;
+    list-style-type: none;
+    text-align: start;
+    text-decoration: none;
+}
+.secondlist li a{
+    text-decoration: none;
+    color: #1caafa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    </style>
+</head>
+<body>
+
+<div style="height: 70px;padding-left: 130px; padding-top: 10px;top: 0;" >
+    <img src="images/playkidlogo.png" alt="" height="33px" width="115px">
+
+    <button class="login">LOGIN</button>
+
+    <button class="enjoynow">ENJOY NOW</button>
+
+</div>
+
+<div class="firstbanner" >
+    <img src="images/playkidsfirstbanner.png" alt="" height="400px" style="margin-left: 600px; margin-top: 50px;">
+
+    <p id="firstbannertext"><strong>ALL YOUR KID’S FAVORITE <br> SHOWS, CHARACTERS, AND <br> LEARNING GAMES IN ONE <br> SAFE PLACE.</strong></p>
+</div>
+   <div class="secondbanner">
+    <img src="images/playkidssecondbanner.png" alt="" height="500px" style="margin-top: 100px;margin-left: 500px;">
+
+    <p class="secondApptext">APP WITH GAMES AND ACTIVITIES</p>
+    <p id="secondtext">THAT NATURE</p>
+    <p id="thirdtext">YOUR CHILD</p>
+
+    <p class="desc">Your child’s learning is stimulated while they have <br> fun with the app. PlayKids enhances their skills, <br> the team work, and their awareness about the <br> world.</p>
+
+    <button class="btnenjoynow">ENJOY NOW</button>
+   </div>
+   <div class="thirdbanner" >
+    <img src="images/playkidsthird.png" alt="" height="380px" style=" margin-top: 120px; margin-left: 100px;">
+
+    <p id="thirdsecondtext">THE EASIEST</p>
+    <p id="thirdbannertext">WAY TO LEARN</p>
+
+    <p class="thirddesc">With over 3000 videos, books, games, and cartoons, <br> children from 2 to 8 years old gets to learn and play <br> with their favorite characters.</p>
+
+    <button class="btnthirdenjoynow">ENJOY NOW</button>
+
+</div> 
+<div class="fourthbanner">
+    <img src="images/playkidmobile.png" alt="" height="400px" style="margin-top: 50px;margin-left: 700px;">
+
+    <p id="fourthsecondtext">CONTENT CURATED BY</p>
+    <p id="fourththirdtext">SPECIALISTS</p>
+
+    <p class="fourthdesc">Our team selects the best in educational <br> content, making sure your child is always in a <br> safe and age-appropriate environment.</p>
+
+    <button class="btnfourthenjoynow">ENJOY NOW</button>
+   </div>
+
+   <div class="emailcontainer">
+
+    <img src="images/playkidemail.png" alt="" style="margin-left: 100px; margin-top: 20px;">
+
+    <p style="margin-top: -50px;margin-left: 250px;width: 400px; color: black; font-size: 19px;font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Stay up to date on news, deals and offers!</p>
+
+    <label for="email"></label>
+    <input type="email" id="email" name="email" placeholder="Your email here">
+   </div>
+
+   <div class="footercontainer">
+    <div class="col-md-3">
+        <ul class="playlogocertified">
+            <li>
+                <a href="">
+                    <img src="images/playkidlogo.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/playkidcertified.png" alt="" height="50px" width="150px">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-3">
+        <p style="color: black; font-size: 20px; ">Company</p>
+        <ul class="secondlist">
+            
+            <li>
+                <a href="">About us</a>
+            </li>
+            <li>
+                <a href="">Terms of use</a>
+            </li>
+            <li>
+                <a href="">Privacy policy</a>
+            </li>
+            <li>
+                <a href="">Blog</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p style="color: black; font-size: 20px;">PlayKids Family</p>
+
+        <ul style="list-style-type: none;">
+            <li>
+                <a href="">
+                    <img src="images/playkidexplorer.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+   </div>
+</body>
+</html>

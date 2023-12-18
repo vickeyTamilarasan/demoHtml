@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login dialog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <button id="btnLogin">Login</button>
+
+    <h1 id="timer"></h1>
+    <div id="dialog">
+        <h2>
+            LogIn
+        </h2>
+
+        <form action=""  id="LoginForm">
+            <input id="Email" type="email" placeholder="TYPE YOUR EMAIL" class="form-control text-center ms-3"
+                style="border-radius: 50px; font-size: 15px;height: 50px;width: 280px;">
+
+            <input id="Password" type="password" placeholder="PASSWORD" class="form-control text-center ms-3 mt-3"
+                style="border-radius: 50px; font-size: 15px;height: 50px;width: 280px;">
+
+            <input id="confirmPassword" type="password" placeholder="CONFIRM PASSWORD" class="form-control text-center ms-3 mt-3"
+                style="border-radius: 50px; font-size: 15px;height: 50px;width: 280px;">
+
+            <button id="btnSignin" class="bg-gradient"
+                style="width: 280px; height: 50px;font-size: 15px;margin-top: 20px; background-color: rgb(117, 214, 21); color: white; text-align: center; border-radius: 50px; border: 1px solid rgb(117, 214, 21);">ENTER</button>
+        </form>
+    </div>
+    <!-- <script src="timerCount.js"></script> -->
+    <script src="dialog.js"></script>
+</body>
+
+</html>

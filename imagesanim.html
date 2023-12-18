@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 250px;
+            width: 250px;
+            background-color: black;
+        }
+        img:hover{
+            width: 700px;
+            height: 500px;
+            transition-duration: 5s;
+            transition-delay: 0;
+            transition-timing-function: ease-in;
+            transform:scale(1.5res);
+        }
+        img{
+            mask-image: url(https://upload.wikimedia.org/wikipedia/commons/3/3e/W3Schools_logo.png);
+
+            -webkit-mask-image: url(https://upload.wikimedia.org/wikipedia/commons/3/3e/W3Schools_logo.png);
+        }
+        @media screen and (max-width:450px){
+            img{
+            opacity: 0.3;
+            width: 300px;
+            height: 300px;
+            transition-duration: 5s;
+            transition-delay: 0;
+            transition-timing-function: ease;
+            transform:rotate(180deg);
+          } 
+        }
+        p{
+            height: 100px;
+            width: 100px;
+            box-sizing: border-box;
+
+        }
+        .para1{
+            background-color: red;
+            padding: 10px;
+        }
+        .para2{
+            background-color: wheat;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/recipe2.jpg" alt="">
+
+    <div>
+        <p class="para1">hai</p>
+        <p class="para2">
+            hai
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.navmenu{
+    background-color: aquamarine;
+    list-style-type: none;
+    padding: 10px;
+    text-decoration: none;
+    height: 200px;
+}
+.navmenu li{
+    height: 50px;
+    float: right;
+}
+.navmenu li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: darkblue;
+    padding: 10px;
+    margin: 20px;
+}
+.navmenu li ul a{
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    color: darkblue;
+    background-color: beige;
+    font-weight: bold;
+}
+.navmenu ul{
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    list-style-type: none;
+}
+.navmenu li:hover{
+    position: relative;
+    text-align: center;
+    background-color: brown;
+}
+.navmenu li:hover ul{
+    left: -50px;
+    top: 20px;
+    color: chocolate;
+    text-align: start;
+    background-color: aquamarine;
+    width: fit-content;
+}
+.navmenu li:hover ul li a{
+padding: 2px;
+display: block;
+width: fit-content;
+background-color: blue;
+color: wheat;
+}
+.navmenu li ul{
+    list-style-type: none;
+}

@@ -1,0 +1,29 @@
+.navmenudemo{
+    list-style-type: none;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    right: 100px;
+}
+.navmenudemo li{
+    float: right;
+    height: 50px;
+    padding-left: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.navmenudemo li a{
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+    
+}
+/* .navmenu li ul a{
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    color: darkblue;
+    background-color: beige;
+    font-weight: bold;
+} */

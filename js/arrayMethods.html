@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <script>
+        let array = [];
+        x = prompt("Enter the values :")
+        for (let i = 0; i < x; i++) {
+             array.push(i);
+            for (let j = 0; j < array.length; j++) {         
+                if (array[j] % 2 == 1) {
+                    array.splice(j, 1);
+                }
+            }
+        }
+        console.log(array);
+
+        let b = ["tamil", 28, "9874561230", true];
+        let c = ["sakthi", 25, "9632587410"];
+        // b.pop();
+        // b.shift();
+        // b.unshift("tamil","asde");
+        // c.splice(2,1,"tamil","asde");
+        b.push("values");
+        // console.log(b.slice(1,4));
+        // data = b.concat(c);
+        // console.log(b.reverse());
+    </script>
+</body>
+
+</html>

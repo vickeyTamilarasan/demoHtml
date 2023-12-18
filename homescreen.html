@@ -1,0 +1,278 @@
+<html>
+    <head>
+<style>
+    ul{
+        margin-left: 400px;
+        margin-top: -50px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: square;
+    }
+    div.marqee1{
+      position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+      marquee.marq1{
+        margin-top: 10px;
+        
+      } 
+      div.marq2{
+        margin-top: 200px;
+        width: 100%;
+      }
+      #header1{
+        color: grey;
+        font-weight: bolder;
+        font-family: cursive;
+      }
+      div.the{
+        width: 500px;
+        height: 50px;
+        position: relative;
+        animation: the 5s ease;
+      }
+      @keyframes the{
+        0%{left: -100px;}
+        50%{left: 200px;}
+        100%{left: 200px;}
+        /* from{left: -200px;}
+        to{left: 0px;} */
+      }
+      #header2{
+        color: chartreuse;
+        font-weight: bolder;
+        font-family: cursive;
+      }
+      div.premium{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        animation-name:premium;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+      }
+      @keyframes premium{
+        /* 0%{left: -200px;}
+        50%{left: 200px;}
+        100%{left: 200px;} */
+        from{left: -200px;}
+        to{left: 200px;}
+      }
+      #header3{
+        color: crimson;
+        font-weight: bolder;
+        font-family: cursive;
+      }
+      div.spices{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        animation-name:spices;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+      }
+      @keyframes spices{
+        /* 0%{left: -300px;}
+        50%{left: 200px;}
+        100%{left: 200px;} */
+        from{left: -300px;}
+        to{left: 200px;}
+      }
+      div.largestselling{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        animation-name:largestselling;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+      }
+      @keyframes largestselling{
+        /* 0%{left: -500px;}
+        50%{left: 200px;}
+        100%{left: 200px;} */
+        from{left: -500px;}
+        to{left: 200px;}
+      }
+      h3{
+        color: black;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .recipetables{
+        padding: 80px;
+        position: relative;
+        margin-top: 500px;
+        background-image: url(images/recipebackground.jpg);
+      }
+      .recipetable{
+        border-collapse: collapse;
+      }
+      #recepitbody{
+        background-color : #FFFFFF;
+      }
+      td{
+        padding: 30px;
+      }
+      th{
+        padding: 30px;
+        color: #44403f;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #recepi1{
+        padding: 10px;
+        box-shadow: 10px 10px 20px 15px gainsboro;
+      }
+      #recepi1:hover{
+        height: 300px;
+        width: 300px;
+      }
+      h2{
+        border-left-style: solid;
+        border-color: orangered;
+        border-width: 3px;
+        padding-left: 10px;
+        color: #44403f;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p{
+        color: gray;
+        margin-left: 20px;
+        line-height: 30px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .topmenu li::marker{
+        color: blue;
+        text-decoration: none;
+      }
+      div.stickyimg{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+      div.stickyli{
+        position: -webkit-sticky;
+                position: sticky;
+                top: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+</style>
+    </head>
+    <body>
+    <div class="stickyimg">
+            <img src="images/logosakthi.png" alt="">
+          </div>
+            <div class="stickyli">
+            <ul type="disc" class="topmenu">
+                <li><a href="" class="a_top_hypers"> Home</a></li>
+                <li><a href="" class="a_top_hypers"> AboutUs</a></li>
+                <li><a href="" class="a_top_hypers"> Products</a></li>
+                <li><a href="" class="a_top_hypers"> Exports</a></li>
+                <li><a href="" class="a_top_hypers"> Values</a></li>
+                <li><a href="" class="a_top_hypers"> Awards</a></li>
+                <li><a href="" class="a_top_hypers"> Services</a></li>
+                <li><a href="" class="a_top_hypers"> Contuct US</a></li>
+            </ul>
+        </div>
+        <div class="marqee1">
+            <marquee class="marq1" behavior="scroll" direction="left" scrollamount="15">
+                <img src="images/slider3.jpg" alt="" height="850px" width="1350px">
+                <img src="images/slider2.jpg" alt="" height="850px" width="1350px">
+                <img src="images/slider1.jpg" alt="" height="850px" width="1350px">
+                <img src="images/slider4.jpg" alt="" height="850px" width="1350px">
+                <img src="images/slider5.jpg" alt="" height="850px" width="1350px">
+            
+            </marquee>
+          </div>
+            <div class="marq2">
+              <div class="the">
+                <h1 id="header1">THE</h1>
+              </div>
+              <div class="premium">
+                <h1 id="header2">PREMIUM</h1>
+              </div>
+              <div class="spices">
+                <h1 id="header3">SPICES</h1>  
+              </div>
+              <div class="largestselling">
+                <h3 id="header4">India's largest selling Masala products</h3>
+              </div>
+            <!-- <marquee class="marq2" behavior="slide" direction="right" scrollamount="25" width="250px">
+                <h1 id="header1">THE</h1>
+            </marquee><br><br>
+            <marquee class="marqes" behavior="slide" direction="right" scrollamount="20" width="340px">
+                <h1 id="header2">PREMIUM</h1>
+            </marquee><br><br>
+            <marquee class="marqees" behavior="slide" direction="right" scrollamount="15" width="300px">
+                <h1 id="header3">SPICES</h1>  
+            </marquee><br><br>
+            <marquee class="marqee" behavior="slide" direction="right" scrollamount="10" width="500px">
+                <h3 id="header4">India's largest selling Masala products</h3>
+            </marquee> -->
+        </div>
+<div class="recipetables">
+        <table class="recipetable">
+          <tbody id="recepitbody">
+          <tr>
+            <th colspan="1 ">    
+            </th>
+            <th style="font-size: xx-large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Recipe for month</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>
+              <img id="recepi1" src="images/recipe1.avif" alt="" height="250px" width="250px">
+              <h2>
+                Chicken chettinad
+              </h2>
+              <p>Bring some magic to your plate with chicken cooked in some peppery authentic Chettinad paste laced with coconut and onions.</p>
+            </td>
+            <td>
+              <img id="recepi1" src="images/recipe2.jpg" alt="" height="250px" width="270px">
+              <h2>
+                Chicken chettinad
+              </h2>
+              <p>Bring some magic to your plate with chicken cooked in some peppery authentic Chettinad paste laced with coconut and onions.</p>
+            </td>
+            <td>
+              <img id="recepi1" src="images/recipe2.jpg" alt="" height="250px" width="250px" >
+              <h2>
+                Chicken chettinad
+              </h2>
+              <p>Bring some magic to your plate with chicken cooked in some peppery authentic Chettinad paste laced with coconut and onions.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img id="recepi1" src="images/recipe1.avif" alt="" height="250px" width="250px">
+              <h2>
+                Chicken chettinad
+              </h2>
+              <p>Bring some magic to your plate with chicken cooked in some peppery authentic Chettinad paste laced with coconut and onions.</p>
+            </td>
+            <td>
+              <img id="recepi1" src="images/recipe2.jpg" alt="" height="250px" width="270px">
+              <h2>
+                Chicken chettinad
+              </h2>
+              <p>Bring some magic to your plate with chicken cooked in some peppery authentic Chettinad paste laced with coconut and onions.</p>
+            </td>
+            <td>
+              <img id="recepi1" src="images/recipe2.jpg" alt="" height="250px" width="250px" >
+              <h2>
+                Chicken chettinad
+              </h2>
+              <p>Bring some magic to your plate with chicken cooked in some peppery authentic Chettinad paste laced with coconut and onions.</p>
+            </td>
+          </tr>
+
+        </tbody>
+        </table>
+      </div>
+    </body>
+</html>
